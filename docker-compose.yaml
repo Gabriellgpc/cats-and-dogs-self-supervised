@@ -9,6 +9,8 @@ services:
     restart: unless-stopped
     build: .
     user: "${UID}:${GID}"
+    environment:
+      - TORCH_HOME=${DATASETS}
     volumes:
       - /etc/passwd:/etc/passwd #just to get the user name by using getpwuid()
       - type: bind

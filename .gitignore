@@ -1,5 +1,7 @@
 # My custom ignore files
 .env
+*.jpg
+*logs*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
